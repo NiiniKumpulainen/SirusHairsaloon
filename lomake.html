@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+
+<h1>Siru's Hairsaloon</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li>
+              <a href="index.html">Etusivu</a>
+            </li>
+            <li>
+            <a href="palvelut.html">Palvelut</a>
+            </li>
+            <li>
+            <a href="henkilokunta.html">Henkilökunta</a>
+            </li>
+          <li>
+            <a class="active" href="lomake.html">Lomake</a>
+            </li>
+            </ul>
+
+    </nav>
+
+    <main>
+      <h2>Tarjouspyyntö hääkampauksesta ja -meikistä</h2>
+      <p>Täytä alla oleva lomake, niin otamme sinuun yhteyttä mahdollisimman pian.</p>
+
+      <form action="kiitos.html" method="get" class="tarjouslomake">
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" placeholder="Etunimi ja sukunimi" required>
+
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" placeholder="esimerkki@osoite.fi" required>
+
+        <label for="puhelin">Puhelinnumero:</label>
+        <input type="tel" id="puhelin" name="puhelin" placeholder="0401234567" required>
+
+        <label for="paiva">Hääpäivä:</label>
+        <input type="date" id="paiva" name="paiva" required>
+
+        <label for="palvelu">Palvelu:</label>
+        <select id="palvelu" name="palvelu" required>
+          <option value="">Valitse palvelu</option>
+          <option value="kampaus">Hääkampaus</option>
+          <option value="meikki">Häämeikki</option>
+          <option value="molemmat">Kampaus ja meikki</option>
+        </select>
+
+        <label for="viesti">Lisätietoja / toiveita:</label>
+        <textarea id="viesti" name="viesti" rows="4" placeholder="Kerro meille toiveistasi..."></textarea>
+
+        <button type="submit">Lähetä tarjouspyyntö</button>
+      </form>
+    </main>
+
+    <!-- Javascript lomakekenttien korostukseen -->
+  <script>
+  // Haetaan kaikki input- ja textarea-elementit
+  const inputs = document.querySelectorAll("input, textarea");
+
+  inputs.forEach(input => {
+    input.addEventListener("focus", () => {
+      input.style.backgroundColor = "#f4dac5"; // Lisätään väri
+    });
+
+    input.addEventListener("blur", () => {
+      input.style.backgroundColor = "white"; // Palautetaan väri
+    });
+  });
+  </script>
+
+    <footer>
+      <p>Siru's Hairsaloon by: Niini, Vesa, Johnny, Inka</p>
+      <p>Images: <a href="kuvapankki">kuvapankki</a></p> </p>
+    </footer>
+</body>
+</html>
