@@ -109,7 +109,7 @@ h1{
     max-height:100%;
   }
 
-ter {
+footer {
     text-align: center;
     background-color: rgba(180, 157, 138, 0.9);
     color: white;
@@ -125,6 +125,7 @@ ter {
     color: white;
     transition: background-color 0.3s ease;
   }
+
 
 
 .palvelut {
@@ -289,17 +290,19 @@ h1, h2, h3, h4 {
   border: 1px solid #aaa;
   border-radius: 5px;
   font-size: 1rem;
+  color: #222; 
+  background-color: white !important; 
 }
 
 .tarjouslomake button {
-  background-color: #b56576;
+  background-color: rgba(180, 157, 138, 0.9);
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
 
 .tarjouslomake button:hover {
-  background-color: #9c4e61;
+  background-color: rgba(179, 154, 133, 0.9);
 }
 
 .kiitos {
@@ -312,7 +315,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.7rem 2rem;
-  background-color: #b56576;
+  background-color: rgba(180, 157, 138, 0.9);
   color: white;
   border-radius: 5px;
   text-decoration: none;
@@ -320,7 +323,7 @@ h1, h2, h3, h4 {
 }
 
 .kiitos .button:hover {
-  background-color: #9c4e61;
+  background-color: rgba(179, 154, 133, 0.9);
 }
 
 
@@ -335,19 +338,4 @@ h1, h2, h3, h4 {
 
 
 
- footer {
-    text-align: center;
-    background-color: rgba(180, 157, 138, 0.9);
-    color: white;
-  }
-
-  footer a {
-    text-decoration: none;
-    color: white;
-}
-
-  footer a:hover {
-    background-color: rgba(180, 157, 138, 0.9);
-    color: white;
-    transition: background-color 0.3s ease;
-  }
+ 
